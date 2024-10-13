@@ -9,20 +9,136 @@ html, body{
   width: 100%;
 }
 
+body{
+  background-color: #f8f7f4;
+}
+
 #page1{
   height: 100%;
   width: 100%;
-  background-color: rgba(247, 240, 192);
+  /* background-color: rgba(247, 240, 192); */
 }
 
 #page1 > #nav{
   height: 100px;
   width: 100%;
-  background-color: royalblue;
+  /* background-color: royalblue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+#nav-part1{
+  width: 25%;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  font-weight: lighter;
+}
+
+#nav-part2{
+  width: 25%;
+  /* background-color: yellow; */
+    display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+#nav-part2 button{
+  padding: 15px 22px;
+  font-weight: 600;
+  border-radius: 50px;
+  font-size: 14px;
+  border: none;
+  background-color: black;
+  color: white;
+  white-space: nowrap;
+}
+
+#nav-part2 button:nth-child(2){
+  background-color: transparent;
+  color: #000;
+}
+
+#nav > img{
+  height: 90px;
+  mix-blend-mode: multiply;
+}
+
+#nav-part1 > h4{
+  font-size: 14px;
+  font-weight:500;
+  white-space: nowrap;
 }
 
 #content{
-  height: calc(100% - 100px);
+  height: calc(100% - 120px);
   width: 100%;
-  background-color: silver;
+  /* background-color: silver; */
+  padding-top: 100px;
 }
+
+#content > h3{
+  background-color: #DDD0E9;
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  width: fit-content;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+#content > h1{
+  font-size: 75px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 80px;
+  margin: 20px 0;
+}
+
+#content > h4{
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin: 35px 0;
+}
+
+#content > button{
+  display: block; 
+  padding: 18px 22px;
+  font-weight: 500;
+  border-radius: 50px;
+  font-size: 17px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin: 30px auto;
+}
+
+#nav-part2 > #searchDiv{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+}
+
+#nav-part2 > #searchDiv > i{
+  left: 25px;
+  position: absolute;
+  z-index: 99;
+}
+
+#nav-part2 > #searchDiv > input{
+  padding: 16px 20px 16px 40px;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
